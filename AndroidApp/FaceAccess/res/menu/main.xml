@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/training"
+          android:title="Training"
+          android:showAsAction="ifRoom"/>
+        <item android:id="@+id/delSess"
+          android:title="Logout User" />
+    <item android:id="@+id/logtest"
+          android:title="Login Test" />
+</menu>

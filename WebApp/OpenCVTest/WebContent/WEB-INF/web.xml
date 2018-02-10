@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+   <servlet>
+        <servlet-name>Opencv</servlet-name>
+        <servlet-class>Opencv</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Opencv</servlet-name>
+        <url-pattern>/op</url-pattern>
+    </servlet-mapping>
+       <servlet>
+        <servlet-name>Encryption</servlet-name>
+        <servlet-class>EncryptionUtil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Encryption</servlet-name>
+        <url-pattern>/enc</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>Recognition</servlet-name>
+        <servlet-class>Recognition</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Recognition</servlet-name>
+        <url-pattern>/rec</url-pattern>
+    </servlet-mapping>
+         <servlet>
+        <servlet-name>JavaCV</servlet-name>
+        <servlet-class>JavaCV</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JavaCV</servlet-name>
+        <url-pattern>/jcv</url-pattern>
+    </servlet-mapping>
+           <servlet>
+        <servlet-name>Preprocess</servlet-name>
+        <servlet-class>Preprocess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Preprocess</servlet-name>
+        <url-pattern>/preprocess</url-pattern>
+    </servlet-mapping>
+               <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+    
+                  <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/out</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Crop</servlet-name>
+        <servlet-class>Crop</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Crop</servlet-name>
+        <url-pattern>/crop</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
